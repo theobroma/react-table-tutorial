@@ -19,7 +19,7 @@ const BasicTable: React.FC = () => {
   });
   return (
     <>
-      <table {...getTableProps()}>
+      <table {...getTableProps()} className="w3-table w3-striped">
         <thead>
           {headerGroups.map((headerGroup) => (
             <tr {...headerGroup.getHeaderGroupProps()}>
