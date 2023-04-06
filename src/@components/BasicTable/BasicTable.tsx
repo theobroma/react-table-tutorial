@@ -4,7 +4,7 @@ import { useTable } from 'react-table';
 import { COLUMNS } from '../../@data/columns';
 import MOCK_DATA from '../../@data/MOCK_DATA.json';
 
-const BasicTable = () => {
+export const BasicTable = () => {
   const columns = useMemo(() => COLUMNS, []) as any;
   const data = useMemo(() => MOCK_DATA, []);
   const {
@@ -53,5 +53,3 @@ const BasicTable = () => {
     </table>
   );
 };
-
-export default BasicTable;

@@ -1,11 +1,9 @@
-import BasicTable from './@components/BasicTable';
+import { BasicTable } from './@components/BasicTable/BasicTable';
 
-const App = () => {
+export const App = () => {
   return (
     <div className="App">
       <BasicTable />
     </div>
   );
 };
-
-export default App;
