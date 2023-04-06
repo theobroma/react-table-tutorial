@@ -2,24 +2,6 @@
   "name": "react-table-tutorial",
   "version": "0.1.0",
   "license": "ISC",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.4.3",
-    "@types/jest": "^29.0.3",
-    "@types/node": "^16.x",
-    "@types/react": "^17.x",
-    "@types/react-dom": "^17.x",
-    "@types/react-table": "^7.7.12",
-    "date-fns": "^2.29.3",
-    "react": "^17.x",
-    "react-dom": "^17.x",
-    "react-scripts": "5.0.1",
-    "react-table": "^7.8.0",
-    "typescript": "^4.8.3",
-    "web-vitals": "^2.x"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -28,12 +10,6 @@
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx,yml,json,css,scss,md}",
     "lint": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
     "serve": "serve -s build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -47,18 +23,37 @@
       "last 1 safari version"
     ]
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "react": "^18.x",
+    "react-dom": "^18.x",
+    "react-scripts": "5.0.1",
+    "react-table": "^7.8.0",
+    "typescript": "^5.0.3",
+    "web-vitals": "^3.x"
+  },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.x",
+    "@types/react": "^18.x",
+    "@types/react-dom": "^18.x",
+    "@types/react-table": "^7.7.14",
     "eslint": "^8.x",
     "eslint-config-airbnb-typescript-prettier": "^5.0.0",
-    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.8.7"
   },
   "engines": {
-    "node": "^16.x"
-  },
-  "resolutions": {
-    "@types/react": "17.x",
-    "@types/react-dom": "17.x"
+    "node": "^18.x"
   }
 }
