@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import { useTable } from 'react-table';
 
 import { COLUMNS } from '../../@data/columns';
