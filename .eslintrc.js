@@ -11,15 +11,21 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 0,
     // prettier-ignore
     'camelcase': 0,
-    'import/no-unused-modules': [1, { unusedExports: true }],
+
+    'import/no-default-export': 'warn',
+    'import/no-unresolved': 'error',
+    // 'import/no-unused-modules': [1, { unusedExports: true }],
     'import/prefer-default-export': 0,
+
     'jsx-a11y/control-has-associated-label': 0,
     'jsx-a11y/label-has-associated-control': 0,
+
     'no-console': 0,
     'no-param-reassign': 0,
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'no-restricted-exports': 0, // Nothing to restrict.
     'no-underscore-dangle': 0,
+
     'react-hooks/exhaustive-deps': [
       'warn',
       // add deps for custom hooks
@@ -28,6 +34,7 @@ module.exports = {
       },
     ],
     'react-hooks/rules-of-hooks': 'error',
+
     'react/function-component-definition': [
       2,
       {
@@ -45,6 +52,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0, // Since React 18 "react-jsx"
     'react/require-default-props': 0, // Since we do not use prop-types
     'react/state-in-constructor': 0,
+
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
     'unused-imports/no-unused-imports': 'error',
